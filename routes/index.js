@@ -28,7 +28,7 @@ router.get('/page', function(req, res, next) {
   // data = data.service[page-1].goods[rows]
   // data = data.service
   let count = 0
-  for(;rows<data.service.length;rows++){
+  for(rows=0;rows<data.service.length;rows++){
     let result = []
     count++
     result.push(data.service[rows])
