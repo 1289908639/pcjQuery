@@ -32,10 +32,13 @@ body{
 	color: #333;
 	overflow-x: hidden; 
 }
+body{
+    background-color: rgba(174,204,134,1);
 
+}
 /*登录表单*/
 body {
-  padding-top: 50px;
+ /* padding-top: 50px;*/
   height: 100%;
   min-height: 100%;
   overflow-x: hidden;
@@ -50,7 +53,7 @@ body {
   border: 1px #ccc solid;
 }
 .login h2 {
-  background: url(../../img/houtai-logo.png) center no-repeat;
+  background: url(/img/taobao-logo.png) center no-repeat;
   height: 70px;
   line-height: 70px;
   text-indent: -9999px;
@@ -89,3 +92,7 @@ body {
 .btnSign{
 	padding: 20px;
 }
+/*
+.container{
+    margin-top:-50px;
+}*/

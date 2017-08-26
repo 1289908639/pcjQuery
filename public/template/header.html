@@ -10,6 +10,7 @@
   }
   #header .navbar {
     font:16px/1.5 latoregular, Verdana, sans-serif
+    height: 65px!important;
   }
   .navbar{
     border: 0;
@@ -18,7 +19,7 @@
     padding: 3px 0;
   }
   .navbar-default{
-    background-color: rgba(255,255,255,.96);
+    background-color: rgba(230,250,255,.96);
   }
   /*.navbar.navbar-defalut.navbar-transprent{
     box-shadow: none;
@@ -54,7 +55,7 @@
   .img-responsive{
     width: 100%;
     min-width: 100%;
-    height: auto;
+    height: 50px;
   }
   /*导航列表*/
   #main-menu{
@@ -76,7 +77,16 @@
     color:#e94840;
   }
   #position{
-    margin-right: 50px;
+    margin-right: 226px;
+  }
+  #position{
+    position: relative;
+  }
+  #position a{
+    float: left;
+  }
+  #position a{
+    padding-right: 50px;
   }
   /*#navbar-nav #position a:hover{
     color: #000;
@@ -88,11 +98,14 @@
     width: 20px;
     height: auto;
   }
+  #position .cityWrap{
+    display: inline;
+  }
   #showCity{
     color: #000;
     margin-right: 5px;
   }
-  #navbar-nav li a#seller{
+  #navbar-nav li  #seller{
     background: #e94840;
     color: #fff;
     border-radius: 5px;
@@ -102,10 +115,10 @@
   }
   /*导航动画*/
   .navbar-default.navbar-transparent.navbar-fixed-top {
-    box-shadow: 0 3px 6px rgba(0, 0, 0, .12);
-    -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, .12);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, .5);
+    -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, .5);
   }
-  .fixed-animated {
+/*  .fixed-animated {
 
     -webkit-animation-name: fixedHeader;
 
@@ -121,13 +134,13 @@
 
     transform-origin: center top
 
-  }
+  }*/
 
   .fixed-animated {
     -webkit-animation-name: fixedHeader;
     animation-name: fixedHeader;
-    -webkit-animation-duration: .8s;
-    animation-duration: .8s;
+    -webkit-animation-duration: 1.5s;
+    animation-duration: 1.5s;
     -webkit-transform-origin: center top;
     -ms-transform-origin: center top;
     transform-origin: center top;
@@ -181,19 +194,29 @@
     <nav id='nav' class="navbar navbar-default navbar-transprent">
       <div class="container">
         <!-- logo -->
-        <div class="navbar-header">
+
+       <!-- <div class="navbar-header">
           <a class="navbar-brand navbar-brand-img" href="/index.html" >
-            <img class="img-responsive" src="/img/logo.png" alt="logo">
+            <img class="img-responsive" src="/img/lo.png" alt="logo">
           </a>
-        </div>
+        </div>-->
+
         <!-- 导航列表  navbar-collapse 响应式导航-->
         <div class="collapse navbar-collapse navbar-right" id="main-menu">
           <ul class="nav navbar-nav" id='navbar-nav'>
-            <li id='position'>
+            <li id='position' >
+              <a href="/map/map.html">
+                <img src="/img/citypoint.png" alt="" >
+                <i id="showCity"></i>
+              </a>
               <a href="/template/position.html">
-                <img src="/img/citypoint.png" alt="" ><!----><i id="showCity">北京</i><!----><i id="city">切换城市</i>
+
+                <i id="city">切换城市</i>
               </a>
             </li>
+              <li id="bgimg">
+                
+              </li>
             <li class="active">
               <a href="/index.html">首页</a>
             </li>
@@ -201,7 +224,7 @@
               <a href="/template/downloadAPP.html">下载APP</a>
             </li>
             <li>
-              <a href="/template/service.html">服务商</a>
+              <a href="javascript:;">服务商</a>
             </li>
             <li>
               <a href="/template/information.html">商家入驻</a>

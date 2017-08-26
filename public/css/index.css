@@ -152,19 +152,12 @@ img{
   -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, .12);
 }
 .fixed-animated {
-
     -webkit-animation-name: fixedHeader;
-
     animation-name: fixedHeader;
-
     -webkit-animation-duration: .8s;
-
     animation-duration: .8s;
-
     -webkit-transform-origin: center top;
-
     -ms-transform-origin: center top;
-
     transform-origin: center top
 
 }
@@ -172,8 +165,8 @@ img{
 .fixed-animated {
   -webkit-animation-name: fixedHeader;
   animation-name: fixedHeader;
-  -webkit-animation-duration: .8s;
-  animation-duration: .8s;
+  -webkit-animation-duration: 0.8s;
+  animation-duration: 0.8s;
   -webkit-transform-origin: center top;
   -ms-transform-origin: center top;
   transform-origin: center top;
@@ -213,6 +206,7 @@ img{
     -moz-transform: rotateX(0);
     -o-transform: rotateX(0);
     -ms-transform: rotateX(0);
+
 	}
 }
 .navbar-fixed-top {
@@ -221,9 +215,17 @@ img{
 
 /*轮播图*/
 #carousel-example-generic{
+	margin-top: 0px;
+	height:420px;
 	margin-bottom: 0;
 	/*padding-top: 72px;*/
 	position: relative;
+}
+.slideimg{
+	height:420%;
+}
+#bgimg img{
+	height:420px;
 }
 .full_banner{
 	width: 100%;
@@ -405,9 +407,9 @@ ul.navname ul li{
 }
 .content{
 	width: 1200px;
-	height: 560px;
+	height: 400px;
 	margin:0 auto;
-	padding: 60px 0;
+	padding: 10px 0;
 	clear: both;/*/both 在左右两侧均不允许浮动元素*/
 }
 /*服务标题*/
@@ -651,4 +653,109 @@ ul.navname ul li{
 
 /*媒体查询*/
 
+/*图片动画*/
+* {
+	padding: 0;
+	margin: 0;
+}
+ul{
+	list-style: none;
+}
+img{
+	vertical-align: middle;
+}
+.wrapper-iconWall{
+	width: 100%;
+	height:546px;
+	background-color: rgb(255,224,175);
+}
+#iconWall{
+	background-color: #d0d0d0;
+	width: 611px;
+	margin: 50px auto;
+
+	overflow: hidden;
+
+	padding: 1px 0 0 1px;
+}
+#iconWall li{
+	width: 121px;
+	height: 108px;
+	background-color: #d0d0d0;
+
+	float: left;
+
+	margin-right: 1px;
+	margin-bottom: 1px;
+
+	cursor: pointer;
+}
+
+.img-3d{
+	position: relative;
+	transform-style: preserve-3d;
+}
+
+/*测试代码：鼠标悬浮  .img-3d  Y轴旋转180deg
+.img-3d:hover{
+    transition: .3s;
+    transform: rotateY(180deg);
+}*/
+.img-3d, .back, .front{
+	width: 121px;
+	height: 108px;
+}
+.back, .front{
+	/*background-color: yellow;*/
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	position: absolute;
+	left: 0;
+	top: 0;
+
+	background-color: #fff;
+}
+
+.back{
+	transform: rotateY(180deg);
+}
+
+.front{
+	backface-visibility: hidden;
+}
+
+#btnRefresh{
+	transition: .3s;
+
+	display: flex;
+	align-content: center;
+	flex-wrap: wrap;
+}
+#btnRefresh span{
+	width: 100%;
+	text-align: center;
+}
+#btnRefresh:hover {
+	background-color: #2621dd;
+	transition: 1s;
+	cursor: pointer;
+}
+
+.icon-refresh{
+	margin: 0 auto;
+	display: block;
+	width: 28px;
+	height: 28px;
+	background: url("../img/img-animate/refresh.png") no-repeat center;
+}
+
+#btnRefresh:hover  .icon-refresh{
+	transition: 5s;
+	background: url("../img/img-animate/refresh-white.png") no-repeat center;
+}
+#btnRefresh:hover span{
+	color: #fff;
+}
 

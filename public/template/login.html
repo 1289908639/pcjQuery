@@ -2,15 +2,17 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>到位APP - 高品质上门服务直约平台，家政服务，上门按摩，上门维修，搬家，安心到家！</title>
-	<link rel="shortcut icon" type="text/css" href="http://www.daoway.cn/pcimages/favicon.png">
-	<link rel="shortcut icon" type="text/css" href="../img/favicon.png">
+	<title>淘宝服务，李虎双制作，完成于8月</title>
+    <link rel="shortcut icon" type="text/css" href="/img/lo.PNG">
+
+
 	<link rel="stylesheet" href="../css/bootstrap.min.css">
 	<link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/login.css">
 </head>
 <body>
 <div>
+	<div class="headerWrap"></div>
 	<div class="container">
     <div class="login">
       <div class="content">
@@ -50,6 +52,7 @@
 <!--表单验证-->
 <script src='../js/jquery.validate.js'></script>
 <script>
+	$(".headerWrap").load("/template/header.html");
 //	表单验证
   $("#loginForm").validate({
     rules: {
@@ -110,6 +113,8 @@
 //					向本地存储 存储一个已经登录的状态  1 0为未登录
 //					localStorage.setItem("logId",1)
 //				登录成功 发送ajax请求 将其id保存到服务器
+
+						/*不明白*/
           $.post('/login',{id:user.tel},function(msg){
             console.log(msg)
           })
@@ -124,9 +129,6 @@
 
 //    let tel = user.tel
 //    let _id = user.id
-
-
-
 
   })
 

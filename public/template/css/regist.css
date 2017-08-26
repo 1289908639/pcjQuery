@@ -35,7 +35,7 @@ body{
 
 /*登录表单*/
 body {
-  padding-top: 50px;
+
   height: 100%;
   min-height: 100%;
   overflow-x: hidden;
@@ -50,7 +50,7 @@ body {
   border: 1px #ccc solid;
 }
 .regist h2, .forgetPwd h2 {
-  background: url(../../img/houtai-logo.png) center no-repeat;
+  background: url(/img/taobao-logo.png) center no-repeat;
   height: 70px;
   line-height: 70px;
   text-indent: -9999px;
@@ -64,6 +64,9 @@ body {
 }
 .control-group input {
   height: 50px;
+}
+body{
+    background-color: rgba(174,204,134,1);
 }
 .control-group .input-group .v_container{
     height: 50px;

@@ -2,15 +2,18 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>到位APP - 高品质上门服务直约平台，家政服务，上门按摩，上门维修，搬家，安心到家！</title>
-	<link rel="shortcut icon" type="text/css" href="http://www.daoway.cn/pcimages/favicon.png">
-	<link rel="shortcut icon" type="text/css" href="../img/favicon.png">
+	<title>淘宝服务，李虎双制作，完成于8月</title>
+    <link rel="shortcut icon" type="text/css" href="/img/lo.PNG">
 	<link rel="stylesheet" href="../css/bootstrap.min.css">
 	<link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/regist.css">
+  <script src="../../sms/sms_util.js"></script>
 </head>
 <body>
+<!-- 头部 -->
+
 <div>
+  <div class="headerWrap"></div>
 	<div class="container">
     <form id="registForm">
       <div class="regist">
@@ -65,18 +68,14 @@
 <!--验证码-->
 <script src="../js/gVerify.js"></script>
 <script>
+
+
+    $(".headerWrap").load("/template/header.html");
+
+
+
+
   $(function(){
-//    $.validator.setDefaults({
-//      //
-//      submitHandler: function() {
-//        // 清空输入框内容
-//        $('input').val('')
-//        alert("提交成功！恭迎您入驻到位平台，商务人员将在3个工作日内与您电话联系，请耐心等待。");return false;
-//
-//      }
-//      // 如果这个参数为true，那么表单不会提交，只进行检查，调试时十分方便
-//      // debug: true
-//    });
     $("#registForm").validate({
       rules: {
         'username': {
@@ -227,36 +226,8 @@
       }
 
 
-
     })
 
-
-
-
-
-
-
-//      var phone = $('#userName').val();
-//      $.ajax({
-//        type: 'post',
-//        url: "/sms",
-//        data: {
-//          phone: phone,
-//          type: 1
-//        },
-//        dataType: 'json',
-//        success: function (result) {
-//          if (result.flag == 1) {
-//// alert('成功');
-////            time(btn);
-//            time(this)
-//          } else {
-//            alert(result.content);
-//          }
-//        }
-//      });
-//    });
-//
 
 
   })

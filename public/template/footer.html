@@ -135,9 +135,13 @@
       /*text-align: left;*/
       color:#898989;
     }
-  </style>
 
-<div class="serve">
+
+
+
+</style>
+
+<!--<div class="serve">
   <h2>到位<i>服务</i>保障</h2>
   <p>到位平台担保交易安全，交易未成功100%退款</p>
 </div>
@@ -156,7 +160,10 @@
       安全无忧
     </li>
   </ul>
-</div>
+</div>-->
+
+
+
 <!-- 底部详情 -->
 <div class="footerCont">
   <!-- 热门城市 -->
@@ -233,7 +240,41 @@
   </div>
   <!-- 版权 -->
   <div class="copyBottom">
-    <p>©2015 版权所有  到位 daoway.com 京ICP备15001471号-1 北京邻家科技有限公司</p>
+    <p>©2015 版权所有  淘宝 daoway.com 杭州马云 淘宝有限公司</p>
   </div>
 </div>
 </div>
+<!--<script type="text/javascript" src="js/tmallIcon.js"></script>-->
+<!--
+<script type="text/javascript">
+  window.onload = function () {
+
+    var btnRefreshDom = document.querySelector("#btnRefresh");
+    var iconRefreshDom = btnRefreshDom.querySelector(".icon-refresh");
+
+    var img3DDOM = document.querySelectorAll("#iconWall .img-3d")
+//zonglieshu
+    var colCount=6;
+    //延迟时间
+    var delayTime = 0;
+    // 单击的次数
+    var clickTimes = 1;
+    /*    var colNum=0;
+     var rowNum=0;*/
+    btnRefreshDom.onclick = function () {
+
+      iconRefreshDom.style.transition = ".3s";
+      iconRefreshDom.style.transform = "rotate(" + 360*clickTimes + "deg)";
+
+      for(var i=0,len=img3DDOM.length;i<len;i++){
+        colNum = i%colCount;
+        rowNum = parseInt(i/colCount);
+        delayTime=(colNum + rowNum)*100;
+
+        img3DDOM[i].style.transition = ".3s "+delayTime+"ms";
+        img3DDOM[i].style.transform = "rotateY("+180*clickTimes+"deg)";
+      }
+      clickTimes++;
+    }
+  }
+</script>-->

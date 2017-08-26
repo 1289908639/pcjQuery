@@ -14,7 +14,7 @@ var sms = require('../sms/sms_util.js')
 //   res.render('index', { title: 'Express' });
 // });
 /* GET home page. */
-router.get('/daowei', function(req, res, next) {
+router.get('/taobao', function(req, res, next) {
   res.send(data)
 });
 router.get('/detail', function(req, res, next) {
